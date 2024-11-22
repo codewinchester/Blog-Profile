@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Figtree", sans-serif;
+    font-size: 1rem;
+    background-color: hsl(47, 88%, 63%);
+    scroll-behavior: smooth;
+  
+}
+
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 30%;
+    margin: 3em auto;
+    padding: 1em 1em ;
+    border: 1.5px solid hsl(0, 0%, 42%);
+    border-radius: 16px;
+    box-shadow: 10px 10px;
+    
+}
+
+.top-image{
+    /*width: 375px; */
+    width: 100%;
+    border-radius: 8px;
+    margin: 0 auto;
+    
+}
+
+.chip-category{
+    margin: .75em .2em;
+    padding: .25em .2em;
+    width: 23%;
+    background-color:hsl(47, 88%, 63%) ;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.chip-category a{
+font-weight: 800;
+color: hsl(0, 0%, 7%);
+text-decoration: none;
+width: auto;
+}
+
+.publication-date p{
+    font-weight: 500;
+    margin: .75em .2em;
+    color: hsl(0, 0%, 7%);
+    width: 50%;
+}
+
+.Heading{
+    font-weight: 700;
+    color: hsl(0, 0%, 7%);
+    width: 99%;
+}
+
+.text-info p{
+    margin: .65em .2em;
+    color: hsl(0, 0%, 36%);
+    font-weight: 600;
+    word-spacing: 2px;
+}
+
+.avatar-name{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.avatar-name img{
+    width:43px;
+    height: 43px;
+}
+
+.avatar-name h2{
+    font-size: medium;
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+    margin-left: .85em;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 1200px) and (max-width: 1600px){
+    .container{
+        margin: 8em auto;
+        transform: scale(1.2);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+        scroll-behavior: smooth;
+    }
+
+    .Heading{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 700px) and (max-width: 1199px){
+   .container{
+    margin-top: 2em;
+    width: 50%;
+   }
+
+   
+}
+
+@media (min-width: 400px) and (max-width: 699px){
+    .container{
+        width: 85%;
+        margin: 1em auto;
+    }
+
+    .Heading{
+        width: auto;
+    }
+
+    .chip-category{
+        width: 30%;
+    }
+
+    
+}
+
+
+@media (min-width: 320px) and (max-width: 399px){
+   .container{
+    width: 80%;
+   }
+
+   .chip-category{
+    width: 35%;
+   }
+}
